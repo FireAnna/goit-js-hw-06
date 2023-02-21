@@ -12,3 +12,19 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+let liString = '';
+
+for (const image of images) {
+  liString += `<li><img class="img_t3" src="${image.url}" alt="${image.alt}" style="height:500px; "></li>`;
+}
+
+const gallery = document.querySelector('.gallery');
+
+ 
+
+gallery.insertAdjacentHTML("beforeend", liString)
+
+
+gallery.style.display = 'flex';
+gallery.style.listStyle = 'none';
