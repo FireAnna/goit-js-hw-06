@@ -18,3 +18,4 @@ const onFormSubmit = event => {
   return userData;
 };
 
+form.addEventListener('submit', onFormSubmit);
